@@ -15,6 +15,8 @@ Uma simples Agenda telefônica
 - Excluir contato
 
 ### Extras
+- Marcar contato como favorito
+- Filtrar lista pelos favoritos
 - Validar: telefone, email e data de nascimento
 - Colocar foto no contato
 - Poder criar mais de uma agenda
