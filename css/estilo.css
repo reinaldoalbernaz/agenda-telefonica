@@ -1,0 +1,80 @@
+ body,
+ html {
+     height: 100%;
+     background-image: linear-gradient(to right, #000000 0%, #53346D 50%, #000000 100%)
+ }
+
+ .b {
+     border: 1px solid red;
+ }
+
+ .agenda {
+     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.75);
+ }
+
+ .agenda-form {
+     background-color: rgba(255, 255, 255, .1);
+     border-radius: 1.5rem 0 0 1.5rem;
+ }
+
+ .agenda-form h3 {
+     color: #fff;
+ }
+
+ .agenda-form label {
+     color: #fff;
+ }
+
+ .agenda-lista {
+     border-radius: 0 1.5rem 1.5rem 0;
+     background-color: #fcfcfc;
+ }
+
+ .contato {
+     padding: 12px 0;
+     margin-bottom: 1rem;
+     background-color: #fff;
+     border-radius: .5rem;
+     border: 2px solid #eee;
+     /* border-right: 5px solid #eee ; */
+     /* border-bottom: 5px solid #eee ; */
+     /* box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1); */
+ }
+
+ .contato .foto-nome {
+     height: 48px;
+ }
+
+ .contato .foto-nome .foto {
+     width: 48px;
+     height: 48px;
+     margin-right: 12px;
+     border-radius: .5rem;
+     background-color: #53346D;
+ }
+
+ .contato .foto-nome .nome {
+     height: 48px;
+ }
+
+ .contato .foto-nome .nome h6 {
+     font-size: 26px;
+     height: 26px;
+     line-height: 100%;
+     font-weight: 600;
+     margin-bottom: 6px;
+ }
+
+ .contato .foto-nome .nome p {
+     color: #6c757d;
+     font-size: 16px;
+     font-weight: 400;
+     height: 16px;
+     line-height: 100%;
+     margin: 0;
+
+ }
+
+ .contato .opcoes {
+     /* border: 1px solid green; */
+ }

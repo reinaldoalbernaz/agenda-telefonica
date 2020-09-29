@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefonica</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container h-100 d-flex justify-content-center align-items-center">
+        <div class="agenda row h-75">
+
+            <!-- FORM CADASTRO -->
+            <div class="agenda-form col-3 p-4 border-right">
+
+                <h3 class="text-white-50 pb-3 mb-4 border-bottom">Cadastrar Contato</h3>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="text" class="form-control" id="telefone">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento">
+                    </div>
+
+                    <button type="button" class="btn btn-block btn-success" onclick="cadastrar()">Salvar
+                        Contato</button>
+                </form>
+            </div>
+
+            <!-- LISTA DE CONTATOS -->
+            <div class="agenda-lista col-9 p-4">
+
+                <h3 class="text-secondary font-weight-bold text-center pb-3 mb-4 border-bottom">
+                    Lista de Contatos
+                </h3>
+
+                <div class="row">
+                    <div class="col-6">
+                        <form>
+                            <div class="my-3">
+                                <input type="text" class="form-control" id="telefone" placeholder="Pesquisar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row px-3">
+                    <div class="col-2 ml-auto mb-3 p-0">
+                        <div class="text-secondary font-weight-bold float-right">
+                            Contatos <span class="ml-1" id="totalContatos">0</span>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <ul id="lista" class="list-unstyled"></ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/logica.js"></script>
+</body>
+
+</html>
